@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  color: white;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a,
+button {
+  transition: opacity $transition;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-grey;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::placeholder {
+  opacity: 0.6;
+}
